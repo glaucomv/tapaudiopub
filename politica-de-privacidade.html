@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - TapAudio</title>
+    <meta name="description" content="Política de Privacidade do aplicativo TapAudio. Saiba como protegemos seus dados e respeitamos sua privacidade.">
+    <link rel="icon" type="image/png" href="TapAudio.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0B0F;
+            color: #E0E0E0;
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        p, li {
+            color: #A8A8B3;
+            line-height: 1.75;
+        }
+        strong {
+            color: #F3F4F6;
+        }
+        .policy-card {
+            background-color: #14141B;
+            border: 1px solid #262633;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0B0B0F]/80 border-b border-gray-800/60">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="TapAudio.png" alt="TapAudio" class="h-9 w-9 mr-3 rounded-lg">
+                <span class="text-2xl font-bold text-white">TapAudio</span>
+            </a>
+            <div class="flex items-center gap-3">
+                <a href="termos-de-uso.html" class="hidden sm:inline-block text-sm text-gray-300 hover:text-white px-3 py-2 transition-colors">
+                    Termos de Uso
+                </a>
+                <a href="index.html" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                    <i class="fas fa-arrow-left mr-2"></i> Voltar ao Início
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Content -->
+    <main class="container mx-auto px-6 py-14">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-3">Política de Privacidade do TapAudio</h1>
+            <p class="text-gray-400 mb-10 text-sm">Última atualização: 8 de novembro de 2026</p>
+
+            <div class="space-y-8">
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <p>Esta Política de Privacidade descreve como o aplicativo <strong>TapAudio</strong> ("nós", "nosso" ou "o aplicativo"), desenvolvido por <strong>ByteFlow Studios</strong>, lida com as informações quando você utiliza nosso serviço. O TapAudio foi construído sob o princípio de <em>privacidade em primeiro lugar (Privacy by Design)</em>: não exigimos criação de conta, não rastreamos você e não coletamos nem vendemos dados pessoais. Ao utilizar o TapAudio, você concorda com as práticas descritas nesta política.</p>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">1. Informações que Processamos</h2>
+                    <p>O TapAudio processa estritamente as informações técnicas mínimas necessárias para executar a reprodução de áudio solicitada pelo próprio usuário:</p>
+                    <ul class="list-disc list-inside mt-4 space-y-3">
+                        <li><strong>Links e Arquivos Compartilhados Diretamente pelo Usuário:</strong> Quando você utiliza a função "Compartilhar" do sistema Android para enviar um link público (como YouTube ou Twitch) ou um arquivo de vídeo local ao TapAudio, o aplicativo processa esse endereço apenas para localizar e reproduzir o fluxo de áudio correspondente. O TapAudio não vasculha nem indexa arquivos do seu dispositivo sem sua ação explícita.</li>
+                        <li><strong>Metadados de Mídia:</strong> Para exibir os controles de reprodução na tela do aplicativo, na barra de notificações e na tela de bloqueio, o aplicativo obtém o título da mídia, o nome do canal/autor e a imagem de capa (miniatura/thumbnail).</li>
+                        <li><strong>Fila de Reprodução, Playlists Salvas e Histórico (Armazenamento 100% Local):</strong> Sua fila de reprodução atual, suas playlists salvas e o histórico recente de reprodução (limitado aos 30 últimos itens) são gravados <strong>exclusivamente no armazenamento interno do seu próprio dispositivo</strong> (via <code>SharedPreferences</code>). Você pode remover itens individuais ou limpar todo o histórico a qualquer momento diretamente no aplicativo.</li>
+                    </ul>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">2. Permissões do Dispositivo</h2>
+                    <p>Para funcionar corretamente no Android, o TapAudio solicita apenas permissões técnicas essenciais:</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li><strong>Acesso à Internet (<code>INTERNET</code>):</strong> Necessário para carregar os fluxos de áudio e miniaturas a partir dos links compartilhados por você.</li>
+                        <li><strong>Serviço em Primeiro Plano e Reprodução de Mídia (<code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>):</strong> Permite que o áudio continue tocando sem interrupções quando você desliga a tela do celular ou alterna para outros aplicativos, exibindo o controle de mídia padrão do Android.</li>
+                        <li><strong>Manter Ativo (<code>WAKE_LOCK</code>):</strong> Evita que o processador interrompa a reprodução enquanto um áudio está ativo. Desativa-se automaticamente assim que a fila termina ou o Sleep Timer encerra a reprodução.</li>
+                    </ul>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">3. Como Usamos as Informações</h2>
+                    <p>Os dados processados localmente têm como únicas finalidades:</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li>Executar a reprodução de áudio de vídeos gravados, transmissões ao vivo (Lives) e arquivos locais escolhidos pelo usuário.</li>
+                        <li>Permitir que o usuário organize sua Fila de Reprodução, salve Playlists personalizadas e consulte seu Histórico local.</li>
+                        <li>Restaurar a fila de reprodução caso o aplicativo seja reaberto.</li>
+                    </ul>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">4. Compartilhamento de Dados e Serviços de Terceiros</h2>
+                    <p>Nós <strong>não coletamos, não vendemos, não alugamos e não compartilhamos</strong> dados pessoais com terceiros ou redes de anúncios. Quando você reproduz um link externo, seu dispositivo realiza requisições de rede diretamente às plataformas de origem (como YouTube ou Twitch) para buscar os metadados e o stream de áudio, estando essas conexões sujeitas às políticas de privacidade das respectivas plataformas.</p>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">5. Doações Voluntárias</h2>
+                    <p>O aplicativo disponibiliza uma tela opcional para apoio voluntário ao projeto via código PIX (no Brasil) ou link externo de apoio internacional. O código PIX "Copia e Cola" e o QR Code são gerados localmente no próprio aparelho, sem coletar dados bancários ou financeiros dentro do aplicativo.</p>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">6. Retenção, Exclusão e Segurança dos Dados</h2>
+                    <p>Como o histórico, a fila e as playlists ficam armazenados apenas no seu aparelho, você detém controle total sobre eles: pode apagá-los a qualquer momento dentro do próprio aplicativo (nas telas de Histórico, Fila e Playlists Salvas) ou limpando os dados/desinstalando o aplicativo nas configurações do Android.</p>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">7. Privacidade Infantil</h2>
+                    <p>Nosso serviço não se destina a menores de 13 anos e não coleta dados de identificação pessoal de crianças ou de qualquer outro usuário.</p>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">8. Alterações a esta Política de Privacidade</h2>
+                    <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir melhorias no aplicativo ou requisitos legais. A data da última atualização estará sempre indicada no topo desta página.</p>
+                </section>
+
+                <section class="policy-card p-6 md:p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold mb-3">9. Contato</h2>
+                    <p>Em caso de dúvidas, sugestões ou solicitações relacionadas a esta Política de Privacidade, entre em contato conosco pelo e-mail: <a href="mailto:byteflowstudios@gmail.com" class="text-indigo-400 hover:underline font-medium">byteflowstudios@gmail.com</a>.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#08080C] py-10 mt-12 border-t border-gray-800/80">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 TapAudio. Desenvolvido por ByteFlow Studios.</p>
+            <div class="mt-4 flex items-center justify-center space-x-6">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">Página Inicial</a>
+                <span>&bull;</span>
+                <a href="politica-de-privacidade.html" class="text-indigo-400 font-medium">Política de Privacidade</a>
+                <span>&bull;</span>
+                <a href="termos-de-uso.html" class="hover:text-indigo-400 transition-colors">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
